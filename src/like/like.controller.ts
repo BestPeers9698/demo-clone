@@ -27,7 +27,6 @@ export class LikeController {
     return this.likeService.getLikeCountForUserAndPost(userId, postId);
   }
   
-
   @Delete(':id')
   async deleteLike(@Param('id') id: number): Promise<void> {
     return this.likeService.deleteLike(id);
